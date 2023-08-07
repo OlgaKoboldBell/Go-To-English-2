@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp3"
         mc:Ignorable="d"
-        Title="GoToEnglish" Height="450" Width="800">
+        Title="GoToEnglish" Height="900" Width="1500">
     <Grid x:Name="gr">
         <Grid.Background>
             <ImageBrush ImageSource="\images\en.jpg"></ImageBrush>
@@ -44,27 +44,63 @@
         <TextBox x:Name="tb2" HorizontalAlignment="Left" Height="345" Margin="120,50,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="595" ScrollViewer.CanContentScroll="True" Visibility ="Hidden" VerticalScrollBarVisibility="Visible" />
         <TextBox x:Name="tb3" HorizontalAlignment="Left" Height="35" Margin="130,10,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="385"  Visibility ="Hidden" />
 
-        <Button x:Name="bt18" Content="На головну" HorizontalAlignment="Left" Height="24" Margin="670,10,0,0" VerticalAlignment="Top" Width="92" Click="bt18_Click"  />
-        <Button x:Name="bt19" Content="СЛОВА" HorizontalAlignment="Left" Height="24" Margin="670,40,0,0" VerticalAlignment="Top" Width="92" Click="bt19_Click"   />
+        <Button x:Name="bt18" Content="На головну" HorizontalAlignment="Left" Height="24" Margin="1250,10,0,0" VerticalAlignment="Top" Width="105" Click="bt18_Click"  />
+        <Button x:Name="bt19" Content="СЛОВА-КАРТИНКИ" HorizontalAlignment="Left" Height="24" Margin="1250,40,0,0" VerticalAlignment="Top" Width="105" Click="bt19_Click"   />
+        <WrapPanel x:Name="wp1" Background="Beige" Height="200"  HorizontalAlignment="Center" VerticalAlignment="Center" Visibility="Hidden">
+            <StackPanel x:Name="sp1" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" Visibility ="Hidden">
+                <!-- First Image and TextBlock -->
+                <StackPanel Margin="5">
+                    <Image Name="dogImage" Source="/images/dog.jpg" Width="150" Height="170" MouseLeftButtonDown="OnImageTapped" Tag="dog" Visibility="Visible" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <TextBlock Name="dogText" Text="Dog - собака" Margin="50" MouseLeftButtonDown="OnWordTapped" Tag="dog" Visibility="Collapsed" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                </StackPanel>
 
-        <StackPanel x:Name="sp1" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" Visibility ="Hidden">
-            <!-- First Image and TextBlock -->
-            <StackPanel Margin="10">
-                <Image Name="dogImage" Source="/images/dog.jpg" Width="150" Height="150" MouseLeftButtonDown="OnImageTapped" Tag="dog" Visibility="Visible" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                <TextBlock Name="dogText" Text="Dog - собака" Margin="50" MouseLeftButtonDown="OnWordTapped" Tag="dog" Visibility="Collapsed" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-            </StackPanel>
+                <!-- Second Image and TextBlock -->
+                <StackPanel Margin="5">
+                    <Image Name="catImage" Source="/images/cat.jpg" Width="150" Height="170" MouseLeftButtonDown="OnImageTapped" Tag="cat" Visibility="Visible" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <TextBlock Name="catText" Text="Cat - кот" Margin="50" MouseLeftButtonDown="OnWordTapped" Tag="cat" Visibility="Collapsed" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                </StackPanel>
 
-            <!-- Second Image and TextBlock -->
-            <StackPanel Margin="10">
-                <Image Name="catImage" Source="/images/cat.jpg" Width="150" Height="150" MouseLeftButtonDown="OnImageTapped" Tag="cat" Visibility="Visible" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                <TextBlock Name="catText" Text="Cat - кот" Margin="50" MouseLeftButtonDown="OnWordTapped" Tag="cat" Visibility="Collapsed" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-            </StackPanel>
+                <!-- Third Image and TextBlock -->
+                <StackPanel Margin="5">
+                    <Image Name="houseImage" Source="/images/hause.jpg" Width="150" Height="170" MouseLeftButtonDown="OnImageTapped" Tag="house" Visibility="Visible" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <TextBlock Name="houseText" Text="House - дім" Margin="50" MouseLeftButtonDown="OnWordTapped" Tag="house" Visibility="Collapsed" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                </StackPanel>
+                <!--4 Image and TextBlock -->
+                <StackPanel Margin="5">
+                    <Image Name="HistoryImage" Source="/images/History.jpg" Width="150" Height="170" MouseLeftButtonDown="OnImageTapped" Tag="History" Visibility="Visible" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <TextBlock Name="HistoryText" Text="History - історія" Margin="50" MouseLeftButtonDown="OnWordTapped" Tag="History" Visibility="Collapsed" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                </StackPanel>
 
-            <!-- Third Image and TextBlock -->
-            <StackPanel Margin="10">
-                <Image Name="houseImage" Source="/images/hause.jpg" Width="150" Height="150" MouseLeftButtonDown="OnImageTapped" Tag="house" Visibility="Visible" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                <TextBlock Name="houseText" Text="House - дім" Margin="50" MouseLeftButtonDown="OnWordTapped" Tag="house" Visibility="Collapsed" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <!--5 Image and TextBlock -->
+                <StackPanel Margin="5">
+                    <Image Name="MathematicsImage" Source="/images/Mathematics.jpg" Width="150" Height="170" MouseLeftButtonDown="OnImageTapped" Tag="Mathematics" Visibility="Visible" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <TextBlock Name="MathematicsText" Text="Mathematics - математика" Margin="50" MouseLeftButtonDown="OnWordTapped" Tag="Mathematics" Visibility="Collapsed" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                </StackPanel>
+
+                <!--6 Image and TextBlock -->
+                <StackPanel Margin="5">
+                    <Image Name="PhysicsImage" Source="/images/Physics.jpg" Width="150" Height="170" MouseLeftButtonDown="OnImageTapped" Tag="Physics" Visibility="Visible" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <TextBlock Name="PhysicsText" Text="Physics - фізика " Margin="50" MouseLeftButtonDown="OnWordTapped" Tag="Physics" Visibility="Collapsed" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                </StackPanel>
+
+                <StackPanel Margin="5">
+                    <Image Name="DrinkImage" Source="/images/Drink.jpg" Width="150" Height="170" MouseLeftButtonDown="OnImageTapped" Tag="Drink" Visibility="Visible" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <TextBlock Name="DrinkText" Text="Drink - пити " Margin="50" MouseLeftButtonDown="OnWordTapped" Tag="Drink" Visibility="Collapsed" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                </StackPanel>
+
+                <!--7 Image and TextBlock -->
+                <StackPanel Margin="5">
+                    <Image Name="LunchImage" Source="/images/Lunch.jpg" Width="150" Height="170" MouseLeftButtonDown="OnImageTapped" Tag="Lunch" Visibility="Visible" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <TextBlock Name="LunchText" Text="Lunch - обід " Margin="50" MouseLeftButtonDown="OnWordTapped" Tag="Lunch" Visibility="Collapsed" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                </StackPanel>
+
+                <!--8 Image and TextBlock -->
+                <StackPanel Margin="5">
+                    <Image Name="SchoolImage" Source="/images/School.jpg" Width="150" Height="170" MouseLeftButtonDown="OnImageTapped" Tag="School" Visibility="Visible" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <TextBlock Name="SchoolText" Text="School - школа " Margin="50" MouseLeftButtonDown="OnWordTapped" Tag="School" Visibility="Collapsed" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                </StackPanel>
+
             </StackPanel>
-        </StackPanel>
+        </WrapPanel>
     </Grid>
 </Window>

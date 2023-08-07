@@ -102,9 +102,23 @@
     <Resource Include="images\bt6.jpg" />
     <Resource Include="images\cat.jpg" />
     <Resource Include="images\dog.jpg" />
-    <Resource Include="images\en.jpg" />
     <Resource Include="images\eng.jpg" />
     <Resource Include="images\hause.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\Physics.jpg" />
+    <Resource Include="images\School.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\History.jpg" />
+    <Resource Include="images\Lunch.jpg" />
+    <Resource Include="images\Mathematics.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\Drink.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\en.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
