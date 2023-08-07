@@ -17,18 +17,18 @@
         <Button x:Name="bt5" Content="Магазин" HorizontalAlignment="Left" Height="24" Margin="25,170,0,0" VerticalAlignment="Top" Width="80" Visibility ="Hidden" Click="bt5_Click"/>
         <Button x:Name="bt6" Content="Погода" HorizontalAlignment="Left" Height="24" Margin="25,210,0,0" VerticalAlignment="Top" Width="80" Visibility ="Hidden" Click="bt6_Click"/>
 
-        <Image x:Name="im2" HorizontalAlignment="Left" Height="150" Margin="120,100,0,0" VerticalAlignment="Top" Width="170" Visibility ="Hidden" Source="\images\bt2.jpg" />
-        <Image x:Name="im3" HorizontalAlignment="Left" Height="150" Margin="120,100,0,0" VerticalAlignment="Top" Width="170" Visibility ="Hidden" Source="\images\bt3.jpg" />
+        <Image x:Name="im2" HorizontalAlignment="Left" Height="250" Margin="140,100,0,0" VerticalAlignment="Top" Width="270" Visibility ="Hidden" Source="\images\bt2.jpg" />
+        <Image x:Name="im3" HorizontalAlignment="Left" Height="250" Margin="140,100,0,0" VerticalAlignment="Top" Width="270" Visibility ="Hidden" Source="\images\bt3.jpg" />
 
 
-        <Image x:Name="im4" HorizontalAlignment="Left" Height="150" Margin="120,100,0,0" VerticalAlignment="Top" Width="170" Visibility ="Hidden" Source="\images\bt4.jpg" />
+        <Image x:Name="im4" HorizontalAlignment="Left" Height="250" Margin="140,100,0,0" VerticalAlignment="Top" Width="270" Visibility ="Hidden" Source="\images\bt4.jpg" />
 
-        <Image x:Name="im5" HorizontalAlignment="Left" Height="150" Margin="120,100,0,0" VerticalAlignment="Top" Width="170" Visibility ="Hidden" Source="\images\bt5.jpg" />
+        <Image x:Name="im5" HorizontalAlignment="Left" Height="250" Margin="140,100,0,0" VerticalAlignment="Top" Width="270" Visibility ="Hidden" Source="\images\bt5.jpg" />
 
-        <Image x:Name="im6" HorizontalAlignment="Left" Height="150" Margin="120,100,0,0" VerticalAlignment="Top" Width="170" Visibility ="Hidden" Source="\images\bt6.jpg" />
-        <TextBox x:Name="tb1" HorizontalAlignment="Left" Height="245" Margin="300,100,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="185" ScrollViewer.CanContentScroll="True" Visibility ="Hidden" VerticalScrollBarVisibility="Visible"/>
+        <Image x:Name="im6" HorizontalAlignment="Left" Height="250" Margin="140,100,0,0" VerticalAlignment="Top" Width="270" Visibility ="Hidden" Source="\images\bt6.jpg" />
+        <TextBox x:Name="tb1" HorizontalAlignment="Left" Height="545" Margin="430,100,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="385" ScrollViewer.CanContentScroll="True" Visibility ="Hidden" VerticalScrollBarVisibility="Visible"/>
 
-        <WebBrowser x:Name="wb" HorizontalAlignment="Left" Margin="500,100,0,0" VerticalAlignment="Top" Height="245"  Width="260" Visibility ="Hidden"/>
+        <WebBrowser x:Name="wb" HorizontalAlignment="Left" Margin="850,100,0,0" VerticalAlignment="Top" Height="545"  Width="460" Visibility ="Hidden"/>
         <Button x:Name="bt7" Content="Вправи" HorizontalAlignment="Left" Height="24" Margin="25,250,0,0" VerticalAlignment="Top" Width="92" Click="bt7_Click" Visibility ="Hidden" />
         <Button x:Name="bt8" Content="Вправа 1" HorizontalAlignment="Left" Height="24" Margin="25,290,0,0" VerticalAlignment="Top" Width="92" Click="bt8_Click" Visibility ="Hidden" />
         <Button x:Name="bt9" Content="Вправа 2" HorizontalAlignment="Left" Height="24" Margin="25,330,0,0" VerticalAlignment="Top" Width="92" Click="bt9_Click" Visibility ="Hidden" />
@@ -41,11 +41,11 @@
         <Button x:Name="bt16" Content="Вправа 1" HorizontalAlignment="Left" Height="24" Margin="25,290,0,0" VerticalAlignment="Top" Width="92" Click="bt16_Click" Visibility ="Hidden" />
         <Button x:Name="bt17" Content="Вправа 2" HorizontalAlignment="Left" Height="24" Margin="25,330,0,0" VerticalAlignment="Top" Width="92" Click="bt17_Click"  Visibility ="Hidden" />
 
-        <TextBox x:Name="tb2" HorizontalAlignment="Left" Height="345" Margin="120,50,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="595" ScrollViewer.CanContentScroll="True" Visibility ="Hidden" VerticalScrollBarVisibility="Visible" />
-        <TextBox x:Name="tb3" HorizontalAlignment="Left" Height="35" Margin="130,10,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="385"  Visibility ="Hidden" />
+        <TextBox x:Name="tb2" HorizontalAlignment="Left" Height="595" Margin="140,50,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="755" ScrollViewer.CanContentScroll="True" Visibility ="Hidden" VerticalScrollBarVisibility="Visible" />
+        <TextBox x:Name="tb3" HorizontalAlignment="Left" Height="35" Margin="140,10,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="385"  Visibility ="Hidden" />
 
-        <Button x:Name="bt18" Content="На головну" HorizontalAlignment="Left" Height="24" Margin="1250,10,0,0" VerticalAlignment="Top" Width="105" Click="bt18_Click"  />
-        <Button x:Name="bt19" Content="СЛОВА-КАРТИНКИ" HorizontalAlignment="Left" Height="24" Margin="1250,40,0,0" VerticalAlignment="Top" Width="105" Click="bt19_Click"   />
+        <Button x:Name="bt18" Content="На головну" HorizontalAlignment="Left" Height="24" Margin="1250,10,0,0" VerticalAlignment="Top" Width="110" Click="bt18_Click"  />
+        <Button x:Name="bt19" Content="СЛОВА-КАРТИНКИ" HorizontalAlignment="Left" Height="24" Margin="1250,40,0,0" VerticalAlignment="Top" Width="110" Click="bt19_Click"   />
         <WrapPanel x:Name="wp1" Background="Beige" Height="200"  HorizontalAlignment="Center" VerticalAlignment="Center" Visibility="Hidden">
             <StackPanel x:Name="sp1" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" Visibility ="Hidden">
                 <!-- First Image and TextBlock -->

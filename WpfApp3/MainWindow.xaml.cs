@@ -52,7 +52,7 @@ namespace WpfApp3
             bt17.Visibility = tb1.Visibility = tb2.Visibility =
             tb3.Visibility = wb.Visibility = im2.Visibility =
             im3.Visibility = im4.Visibility = im5.Visibility =
-            im6.Visibility = sp1.Visibility = Visibility.Hidden;
+            im6.Visibility = sp1.Visibility = wp1.Visibility = Visibility.Hidden;
         }
 
         //вітання
@@ -108,7 +108,7 @@ namespace WpfApp3
         private void bt5_Click(object sender, RoutedEventArgs e)
         {
             tb1.Text = tb2.Text = "";
-            bt3.Visibility = bt4.Visibility = bt2.Visibility =
+            bt3.Visibility = bt4.Visibility = bt2.Visibility = wb.Visibility =
                 bt6.Visibility = tb2.Visibility = Visibility.Hidden;
             bt7.Visibility = bt14.Visibility = bt15.Visibility = tb1.Visibility =
                 wb.Visibility = Visibility.Visible;
@@ -254,7 +254,7 @@ namespace WpfApp3
                 bt14.Visibility = bt15.Visibility = bt16.Visibility = bt17.Visibility =
                 wb.Visibility = tb1.Visibility = tb2.Visibility = tb3.Visibility =
                 im2.Visibility = im3.Visibility = im4.Visibility = im5.Visibility =
-                im6.Visibility = sp1.Visibility = Visibility.Hidden;
+                im6.Visibility = sp1.Visibility = wp1.Visibility = Visibility.Hidden;
         }
         async public void Show_info(string patch)
         {
