@@ -110,8 +110,7 @@ namespace WpfApp3
             tb1.Text = tb2.Text = "";
             bt3.Visibility = bt4.Visibility = bt2.Visibility = wb.Visibility =
                 bt6.Visibility = tb2.Visibility = Visibility.Hidden;
-            bt7.Visibility = bt14.Visibility = bt15.Visibility = tb1.Visibility =
-                wb.Visibility = Visibility.Visible;
+            bt7.Visibility = bt14.Visibility = bt15.Visibility = tb1.Visibility = Visibility.Visible;
             Show_info(".\\texts\\store.txt");
             //Show_info("D:\\Users\\Olga\\Desktop\\TeamPr\\магазин.txt");
             im5.Visibility = Visibility.Visible;
