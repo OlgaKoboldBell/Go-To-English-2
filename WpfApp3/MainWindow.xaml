@@ -105,7 +105,7 @@
         
         <Button x:Name="bt24" Content="Про нас" HorizontalAlignment="Left" Height="24" Margin="225,10,0,0" VerticalAlignment="Top" Width="92" Click="bt24_Click" />
 
-        <Button x:Name="bt21" Content="Тест 1" HorizontalAlignment="Left" Height="24" Margin="425,10,0,0" VerticalAlignment="Top" Width="92" />
+        <Button x:Name="bt21" Content="Тест 1" HorizontalAlignment="Left" Height="24" Margin="425,10,0,0" VerticalAlignment="Top" Width="92" Click="bt21_Click" />
         <Button x:Name="bt22" Content="Тест 2" HorizontalAlignment="Left" Height="24" Margin="625,10,0,0" VerticalAlignment="Top" Width="92"   />
         <Button x:Name="bt23" Content="Тест 3" HorizontalAlignment="Left" Height="24" Margin="825,10,0,0" VerticalAlignment="Top" Width="92" />
 
@@ -246,7 +246,38 @@
 Компанія &quot;gotoEnglish&quot; прагне стати світовим лідером в сфері інноваційного вивчення англійської мови, допомагаючи мільйонам людей здійснити свої освітні та професійні амбіції. Company &quot;gotoEnglish&quot; is an innovative educational organization founded in 2023 with the goal of revolutionizing 
     and democratizing the process of learning the English language. Our mission is to make English language learning accessible and effective for all, regardless of their level of prior preparation, resources, and geographical location." 
  HorizontalAlignment="Left" Height="300" Margin="40,30,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="700" ScrollViewer.CanContentScroll="True" VerticalScrollBarVisibility="Visible"/>
+        </WrapPanel>
+        <WrapPanel x:Name="wp3" Background="Beige" HorizontalAlignment="Left" Height="500" Margin="50,50,0,0"  VerticalAlignment="Top" 
+                   Width="1000" Visibility="Hidden" >
+            <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Width="223">
+                <Label Content="English Word:" FontWeight="Bold"/>
+                <Label x:Name="englishLabel1" Content="Apple" FontWeight="Bold" FontStyle="Italic"/>
+                <RadioButton x:Name="option1_1" Content="Яблуко" GroupName="options1" Margin="10"/>
+                <RadioButton x:Name="option1_2" Content="Банан" GroupName="options1" Margin="10"/>
+                <RadioButton x:Name="option1_3" Content="Помідор" GroupName="options1" Margin="10"/>
+            </StackPanel>
 
+
+
+            <StackPanel Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center" Width="223">
+                <Label Content="English Word:" FontWeight="Bold"/>
+                <Label x:Name="englishLabel2" Content="Car" FontStyle="Italic" FontWeight="Bold"/>
+                <RadioButton x:Name="option2_1" Content="Машина" GroupName="options2" Margin="10"/>
+                <RadioButton x:Name="option2_2" Content="Велосипед" GroupName="options2" Margin="10"/>
+                <RadioButton x:Name="option2_3" Content="Корабель" GroupName="options2" Margin="10"/>
+            </StackPanel>
+
+
+
+            <StackPanel Grid.Row="4" HorizontalAlignment="Center" VerticalAlignment="Center" Width="223">
+                <Label Content="English Word:" FontWeight="Bold"/>
+                <Label x:Name="englishLabel3" Content="Book" FontStyle="Italic" FontWeight="Bold"/>
+                <RadioButton x:Name="option3_1" Content="Книга" GroupName="options3" Margin="10"/>
+                <RadioButton x:Name="option3_2" Content="Журнал" GroupName="options3" Margin="10"/>
+                <RadioButton x:Name="option3_3" Content="Газета" GroupName="options3" Margin="10"/>
+            </StackPanel>
+            <Button x:Name="bt25"  Content="Check Translations" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,20" Click="CheckTranslations_Click" FontSize="14" FontWeight="Bold" Background="#FF5CBFD8"/>
+            
         </WrapPanel>
     </Grid>
 </Window>

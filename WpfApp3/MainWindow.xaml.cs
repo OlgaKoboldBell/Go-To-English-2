@@ -39,6 +39,12 @@ namespace WpfApp3
             pictureBoxes.Add(DrinkImage);
             pictureBoxes.Add(LunchImage);
             pictureBoxes.Add(SchoolImage);
+
+            englishLabel1.Content = "English Word: " + englishWords[0];
+
+            englishLabel2.Content = "English Word: " + englishWords[1];
+
+            englishLabel3.Content = "English Word: " + englishWords[2];
         }
 
         //вибір теми
@@ -53,7 +59,7 @@ namespace WpfApp3
             tb3.Visibility = wb.Visibility = im2.Visibility =
             im3.Visibility = im4.Visibility = im5.Visibility =
             im6.Visibility = sp1.Visibility = wp1.Visibility =
-            wp2.Visibility = Visibility.Hidden;
+            wp2.Visibility = wp3.Visibility = Visibility.Hidden;
         }
 
         //вітання
@@ -254,7 +260,8 @@ namespace WpfApp3
                 bt14.Visibility = bt15.Visibility = bt16.Visibility = bt17.Visibility =
                 wb.Visibility = tb1.Visibility = tb2.Visibility = tb3.Visibility =
                 im2.Visibility = im3.Visibility = im4.Visibility = im5.Visibility =
-                im6.Visibility = sp1.Visibility = wp1.Visibility = wp2.Visibility = Visibility.Hidden;
+                im6.Visibility = sp1.Visibility = wp1.Visibility = wp2.Visibility =
+                wp3.Visibility = Visibility.Hidden;
         }
         async public void Show_info(string patch)
         {
@@ -458,7 +465,7 @@ namespace WpfApp3
             bt17.Visibility = tb1.Visibility = tb2.Visibility =
             tb3.Visibility = wb.Visibility = im2.Visibility =
             im3.Visibility = im4.Visibility = im5.Visibility =
-            im6.Visibility = sp1.Visibility = wp2.Visibility = Visibility.Hidden;
+            im6.Visibility = sp1.Visibility = wp2.Visibility = wp3.Visibility = Visibility.Hidden;
             tb2.Text = "";
             wp1.Visibility = sp1.Visibility = Visibility.Visible;
         }
@@ -472,9 +479,102 @@ namespace WpfApp3
      bt14.Visibility = bt15.Visibility = bt16.Visibility = bt17.Visibility =
      wb.Visibility = tb1.Visibility = tb2.Visibility = tb3.Visibility =
      im2.Visibility = im3.Visibility = im4.Visibility = im5.Visibility =
-     im6.Visibility = sp1.Visibility = wp1.Visibility = Visibility.Hidden;
+     im6.Visibility = sp1.Visibility = wp1.Visibility = wp3.Visibility = Visibility.Hidden;
             //gr.Background = Brushes.Beige;
             wp2.Visibility = Visibility.Visible;
+        }
+
+       // тест 1
+        private void bt21_Click(object sender, RoutedEventArgs e)
+        {
+            bt2.Visibility = bt3.Visibility = bt4.Visibility = bt5.Visibility =
+bt6.Visibility = bt7.Visibility = bt8.Visibility = bt9.Visibility =
+bt10.Visibility = bt11.Visibility = bt12.Visibility = bt13.Visibility =
+bt14.Visibility = bt15.Visibility = bt16.Visibility = bt17.Visibility =
+wb.Visibility = tb1.Visibility = tb2.Visibility = tb3.Visibility =
+im2.Visibility = im3.Visibility = im4.Visibility = im5.Visibility =
+im6.Visibility = sp1.Visibility = wp1.Visibility = Visibility.Hidden;
+            //gr.Background = Brushes.Beige;
+            wp3.Visibility = Visibility.Visible;
+        }
+
+        private string[] correctTranslations = { "Яблуко", "Машина", "Книга" };
+
+        private string[] englishWords = { "Apple", "Car", "Book" };
+
+        private int correctCount = 0;
+
+
+
+
+        private void CheckTranslations_Click(object sender, RoutedEventArgs e)
+
+        {
+
+            string selectedTranslation1 = GetSelectedTranslation(option1_1, option1_2, option1_3);
+
+            string selectedTranslation2 = GetSelectedTranslation(option2_1, option2_2, option2_3);
+
+            string selectedTranslation3 = GetSelectedTranslation(option3_1, option3_2, option3_3);
+
+
+
+            if (selectedTranslation1 == correctTranslations[0])
+
+                correctCount++;
+
+            if (selectedTranslation2 == correctTranslations[1])
+
+                correctCount++;
+
+            if (selectedTranslation3 == correctTranslations[2])
+
+                correctCount++;
+
+
+
+            if (correctCount == 3)
+
+            {
+
+                MessageBox.Show("All translations are correct!");
+
+            }
+
+            else
+
+            {
+
+                MessageBox.Show("Some translations are incorrect. Please try again.");
+
+            }
+
+
+
+            MessageBox.Show("Your score: " + correctCount + " / 3");
+
+            correctCount = 0; // Reset the count for next attempt
+
+        }
+
+
+
+        private string GetSelectedTranslation(params RadioButton[] options)
+
+        {
+
+            foreach (RadioButton option in options)
+
+            {
+
+                if (option.IsChecked == true)
+
+                    return option.Content.ToString();
+
+            }
+
+            return "";
+
         }
     }
 }
