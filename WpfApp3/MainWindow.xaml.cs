@@ -52,7 +52,8 @@ namespace WpfApp3
             bt17.Visibility = tb1.Visibility = tb2.Visibility =
             tb3.Visibility = wb.Visibility = im2.Visibility =
             im3.Visibility = im4.Visibility = im5.Visibility =
-            im6.Visibility = sp1.Visibility = wp1.Visibility = Visibility.Hidden;
+            im6.Visibility = sp1.Visibility = wp1.Visibility =
+            wp2.Visibility = Visibility.Hidden;
         }
 
         //вітання
@@ -253,7 +254,7 @@ namespace WpfApp3
                 bt14.Visibility = bt15.Visibility = bt16.Visibility = bt17.Visibility =
                 wb.Visibility = tb1.Visibility = tb2.Visibility = tb3.Visibility =
                 im2.Visibility = im3.Visibility = im4.Visibility = im5.Visibility =
-                im6.Visibility = sp1.Visibility = wp1.Visibility = Visibility.Hidden;
+                im6.Visibility = sp1.Visibility = wp1.Visibility = wp2.Visibility = Visibility.Hidden;
         }
         async public void Show_info(string patch)
         {
@@ -457,9 +458,23 @@ namespace WpfApp3
             bt17.Visibility = tb1.Visibility = tb2.Visibility =
             tb3.Visibility = wb.Visibility = im2.Visibility =
             im3.Visibility = im4.Visibility = im5.Visibility =
-            im6.Visibility = sp1.Visibility = Visibility.Hidden;
+            im6.Visibility = sp1.Visibility = wp2.Visibility = Visibility.Hidden;
             tb2.Text = "";
             wp1.Visibility = sp1.Visibility = Visibility.Visible;
+        }
+
+        //про нас
+        private void bt24_Click(object sender, RoutedEventArgs e)
+        {
+            bt2.Visibility = bt3.Visibility = bt4.Visibility = bt5.Visibility =
+     bt6.Visibility = bt7.Visibility = bt8.Visibility = bt9.Visibility =
+     bt10.Visibility = bt11.Visibility = bt12.Visibility = bt13.Visibility =
+     bt14.Visibility = bt15.Visibility = bt16.Visibility = bt17.Visibility =
+     wb.Visibility = tb1.Visibility = tb2.Visibility = tb3.Visibility =
+     im2.Visibility = im3.Visibility = im4.Visibility = im5.Visibility =
+     im6.Visibility = sp1.Visibility = wp1.Visibility = Visibility.Hidden;
+            //gr.Background = Brushes.Beige;
+            wp2.Visibility = Visibility.Visible;
         }
     }
 }
