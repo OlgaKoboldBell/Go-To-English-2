@@ -42,7 +42,7 @@
         <Button x:Name="bt17" Content="Вправа 2" HorizontalAlignment="Left" Height="24" Margin="25,330,0,0" VerticalAlignment="Top" Width="92" Click="bt17_Click"  Visibility ="Hidden" />
 
         <TextBox x:Name="tb2" HorizontalAlignment="Left" Height="595" Margin="140,50,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="755" ScrollViewer.CanContentScroll="True" Visibility ="Hidden" VerticalScrollBarVisibility="Visible" />
-        <TextBox x:Name="tb3" HorizontalAlignment="Left" Height="35" Margin="140,10,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="385"  Visibility ="Hidden" />
+        <TextBox x:Name="tb3" HorizontalAlignment="Left" Height="35" Margin="25,370,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="385"  Visibility ="Hidden" />
 
         <Button x:Name="bt18" Content="На головну" HorizontalAlignment="Left" Height="24" Margin="1250,10,0,0" VerticalAlignment="Top" Width="110" Click="bt18_Click"  />
         <Button x:Name="bt19" Content="СЛОВА-КАРТИНКИ" HorizontalAlignment="Left" Height="24" Margin="1250,40,0,0" VerticalAlignment="Top" Width="110" Click="bt19_Click"   />
