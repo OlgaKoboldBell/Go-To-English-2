@@ -22,6 +22,7 @@ namespace WpfApp3
     /// </summary>
     public partial class MainWindow : Window
     {
+        Window1 newWindow1;
         private List<Image> pictureBoxes;
         public MainWindow()
         {
@@ -121,7 +122,7 @@ namespace WpfApp3
             Show_info(".\\texts\\store.txt");
             //Show_info("D:\\Users\\Olga\\Desktop\\TeamPr\\магазин.txt");
             im5.Visibility = Visibility.Visible;
-            //wb.Navigate("https://learn-english.net.ua/samovchitel/anglijska-mova-v-magazini-supermarket-i-magazin-odyagu/");
+            ////wb.Navigate("https://translate.google.com/?hl=ru&sl=en&tl=uk&op=translate");
 
         }
 
@@ -575,6 +576,15 @@ im6.Visibility = sp1.Visibility = wp1.Visibility = Visibility.Hidden;
 
             return "";
 
+        }
+
+        //тест 2 - створено нове вікно
+        private void bt22_Click(object sender, RoutedEventArgs e)
+        {
+            Window1 newWindow1 = new Window1(this);
+            newWindow1.Owner = this;
+            newWindow1.Show();
+            newWindow1.Title = "Тест 2";
         }
     }
 }
