@@ -596,5 +596,14 @@ im6.Visibility = sp1.Visibility = wp1.Visibility = Visibility.Hidden;
             newWindow2.Show();
             newWindow2.Title = "Тест 3";
         }
+
+        //словник - створено нове вікно
+        private void bt27_Click(object sender, RoutedEventArgs e)
+        {
+            Window3 newWindow3 = new Window3(this);
+            newWindow3.Owner = this;
+            newWindow3.Show();
+            newWindow3.Title = "Словник";
+        }
     }
 }

@@ -108,143 +108,73 @@
         <Button x:Name="bt21" Content="Тест 1" HorizontalAlignment="Left" Height="24" Margin="425,10,0,0" VerticalAlignment="Top" Width="92" Click="bt21_Click" />
         <Button x:Name="bt22" Content="Тест 2" HorizontalAlignment="Left" Height="24" Margin="625,10,0,0" VerticalAlignment="Top" Width="92" Click="bt22_Click"   />
         <Button x:Name="bt23" Content="Тест 3" HorizontalAlignment="Left" Height="24" Margin="825,10,0,0" VerticalAlignment="Top" Width="92" Click="bt23_Click" />
+        <Button x:Name="bt27" Content="Словник" HorizontalAlignment="Left" Height="24" Margin="1025,10,0,0" VerticalAlignment="Top" Width="92" Click="bt27_Click"  />
 
 
         <WrapPanel x:Name="wp2" Background="Beige" HorizontalAlignment="Left" Height="500" Margin="50,50,0,0"  VerticalAlignment="Top" 
                    Width="1000" Visibility="Hidden" >
-
-
             <!-- Bogdan -->
-
             <StackPanel Orientation="Horizontal" Margin="0 0 0 10">
-
                 <Image Source="/images/Bogdan.png" Width="50" Height="50">
-
                     <Image.Clip>
-
                         <EllipseGeometry Center="25,25" RadiusX="25" RadiusY="25"/>
-
                     </Image.Clip>
-
                 </Image>
-
                 <StackPanel>
-
                     <TextBlock Text="Богдан Ковальчук" FontSize="12"/>
-
                     <TextBlock Text="Розробник Фронтенду" FontSize="10" Foreground="Gray"/>
-
                     <TextBlock Text="Опис: Вигаданий опис учасника" FontSize="10"/>
-
                 </StackPanel>
-
             </StackPanel>
-
-
-
             <!-- Vitali -->
-
             <StackPanel Orientation="Horizontal" Margin="0 0 0 10">
-
                 <Image Source="/images/Vitali.png" Width="50" Height="50">
-
                     <Image.Clip>
-
                         <EllipseGeometry Center="25,25" RadiusX="25" RadiusY="25"/>
-
                     </Image.Clip>
-
                 </Image>
-
                 <StackPanel>
-
                     <TextBlock Text="Мішуров Віталій" FontSize="12"/>
-
                     <TextBlock Text="Розробник Фронтенд" FontSize="10" Foreground="Gray"/>
-
                     <TextBlock Text="Опис: Вигаданий опис учасника" FontSize="10"/>
-
                 </StackPanel>
-
             </StackPanel>
-
-
-
             <!-- Igor -->
-
             <StackPanel Orientation="Horizontal" Margin="0 0 0 10">
-
                 <Image Source="/images/Igor.png" Width="50" Height="50">
-
                     <Image.Clip>
-
                         <EllipseGeometry Center="25,25" RadiusX="25" RadiusY="25"/>
-
                     </Image.Clip>
-
                 </Image>
-
                 <StackPanel>
-
                     <TextBlock Text="Смірнов Ігор" FontSize="12"/>
-
                     <TextBlock Text="Розробник Бекенд" FontSize="10" Foreground="Gray"/>
-
                     <TextBlock Text="Опис: Вигаданий опис учасника" FontSize="10"/>
-
                 </StackPanel>
-
             </StackPanel>
-
-
-
             <!-- Olga -->
-
             <StackPanel Orientation="Horizontal" Margin="0 0 0 10">
-
                 <Image Source="/images/Olga.png" Width="50" Height="50">
-
                     <Image.Clip>
-
                         <EllipseGeometry Center="25,25" RadiusX="25" RadiusY="25"/>
-
-
                     </Image.Clip>
-
                 </Image>
-
                 <StackPanel>
-
                     <TextBlock Text="Кобильська Ольга" FontSize="12"/>
-
                     <TextBlock Text="Директор " FontSize="10" Foreground="Gray"/>
-
                     <TextBlock Text="Опис: Вигаданий опис учасника" FontSize="10"/>
-
-
                 </StackPanel>
-
             </StackPanel>
-
-
             <TextBox x:Name="tb4" Text="Компанія &quot;gotoEnglish&quot; (гоутуЕнгліш) - це інноваційна освітня організація, заснована в 2023 році з метою революціонізувати та демократизувати процес вивчення англійської мови. Наша місія полягає в тому, щоб зробити навчання англійської мови доступним та ефективним для всіх, незалежно від рівня попередньої підготовки, ресурсів та географічного розташування. Місія:
-
 Наша місія - зробити вивчення англійської мови захоплюючим, цікавим та ефективним процесом. Ми віримо, що кожна особа має право на якісну освіту, тому ми прагнемо створити інноваційні навчальні підходи та засоби, які забезпечать максимальний розвиток мовних навичок.
-
 Продукти та послуги:
-
 Мобільний додаток: Наш мобільний додаток дозволяє користувачам навчатися англійської мови в будь-якому місці і в будь-який час. Він містить в собі корисні ресурси, вправи, тестування та можливість спілкування з викладачами та іншими учнями.
-
 Якість: Ми прагнемо до найвищої якості навчання та надаємо студентам знання, які дійсно сприяють розвитку їх мовних навичок.
-
 Доступність: Ми віримо в доступність освіти для всіх. Наші ціни адекватні та демократичні, щоб надати можливість вивчати англійську мову максимальній кількості осіб.
-
 Інновації: Ми постійно вдосконалюємо наші підходи та використовуємо нові технології для ефективного вивчення мови.
-
 Спільнота: Ми підтримуємо дружню та підтримуючу спільноту учнів та викладачів, де можна обмінюватися знаннями та досвідом.
-
 Компанія &quot;gotoEnglish&quot; прагне стати світовим лідером в сфері інноваційного вивчення англійської мови, допомагаючи мільйонам людей здійснити свої освітні та професійні амбіції. Company &quot;gotoEnglish&quot; is an innovative educational organization founded in 2023 with the goal of revolutionizing 
-    and democratizing the process of learning the English language. Our mission is to make English language learning accessible and effective for all, regardless of their level of prior preparation, resources, and geographical location." 
+and democratizing the process of learning the English language. Our mission is to make English language learning accessible and effective for all, regardless of their level of prior preparation, resources, and geographical location." 
  HorizontalAlignment="Left" Height="300" Margin="40,30,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="700" ScrollViewer.CanContentScroll="True" VerticalScrollBarVisibility="Visible"/>
         </WrapPanel>
         <WrapPanel x:Name="wp3" Background="Beige" HorizontalAlignment="Left" Height="500" Margin="50,50,0,0"  VerticalAlignment="Top" 
