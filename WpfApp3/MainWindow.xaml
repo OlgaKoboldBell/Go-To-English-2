@@ -107,7 +107,7 @@
 
         <Button x:Name="bt21" Content="Тест 1" HorizontalAlignment="Left" Height="24" Margin="425,10,0,0" VerticalAlignment="Top" Width="92" Click="bt21_Click" />
         <Button x:Name="bt22" Content="Тест 2" HorizontalAlignment="Left" Height="24" Margin="625,10,0,0" VerticalAlignment="Top" Width="92" Click="bt22_Click"   />
-        <Button x:Name="bt23" Content="Тест 3" HorizontalAlignment="Left" Height="24" Margin="825,10,0,0" VerticalAlignment="Top" Width="92" />
+        <Button x:Name="bt23" Content="Тест 3" HorizontalAlignment="Left" Height="24" Margin="825,10,0,0" VerticalAlignment="Top" Width="92" Click="bt23_Click" />
 
 
         <WrapPanel x:Name="wp2" Background="Beige" HorizontalAlignment="Left" Height="500" Margin="50,50,0,0"  VerticalAlignment="Top" 

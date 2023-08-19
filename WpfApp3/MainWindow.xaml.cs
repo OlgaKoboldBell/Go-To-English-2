@@ -23,6 +23,7 @@ namespace WpfApp3
     public partial class MainWindow : Window
     {
         Window1 newWindow1;
+        Window2 newWindow2;
         private List<Image> pictureBoxes;
         public MainWindow()
         {
@@ -585,6 +586,15 @@ im6.Visibility = sp1.Visibility = wp1.Visibility = Visibility.Hidden;
             newWindow1.Owner = this;
             newWindow1.Show();
             newWindow1.Title = "Тест 2";
+        }
+
+        //тест 3 - створено нове вікно
+        private void bt23_Click(object sender, RoutedEventArgs e)
+        {
+            Window2 newWindow2 = new Window2(this);
+            newWindow2.Owner = this;
+            newWindow2.Show();
+            newWindow2.Title = "Тест 3";
         }
     }
 }
