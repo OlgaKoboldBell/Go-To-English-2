@@ -33,7 +33,7 @@ namespace WpfApp3
             InitializeComponent();
             Mw3 = w3;
             conn = new SqlConnection();
-            cs = @" Data Source = (localdb)\MSSQLLocalDB; Initial Catalog = Eng; Integrated Security = SSPI;";
+            cs = @" Data Source = (localdb)\MSSQLLocalDB; Initial Catalog = Project; Integrated Security = SSPI;";
             conn.ConnectionString = cs; 
         }
         private void Button_Click_1(object sender, RoutedEventArgs e)
