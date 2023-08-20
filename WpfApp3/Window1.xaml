@@ -8,7 +8,7 @@
         Title="Window1" Height="450" Width="800">
     <Grid >
       
-        <WrapPanel x:Name="wp3" Background="Beige" HorizontalAlignment="Left" Height="300" Margin="50,50,0,0"  
+        <WrapPanel x:Name="wp3" Background="Coral" HorizontalAlignment="Left" Height="300" Margin="50,50,0,0"  
                    VerticalAlignment="Top" Width="600" >
             <TextBlock Text="Task2" HorizontalAlignment="Center" FontSize="22" FontWeight="Bold" Margin="0,20,0,0"/>
 

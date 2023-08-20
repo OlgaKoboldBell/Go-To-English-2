@@ -6,13 +6,13 @@
         xmlns:local="clr-namespace:WpfApp3"
         mc:Ignorable="d"
         Title="Словник" Height="450" Width="800">
-    <Grid>
-        <DataGrid x:Name="Topic" Height="NaN" Margin="22,22,228,286" Width="NaN"/>
-        <DataGrid x:Name="Words" Height="NaN" Margin="22,154,228,154" Width="NaN"/>
-        <DataGrid x:Name="Items" Height="NaN" Margin="22,298,228,10" Width="NaN" RenderTransformOrigin="0.478,1.246"/>
-        <Button Content="Topic" HorizontalAlignment="Left" Margin="616,61,0,0" VerticalAlignment="Top" Height="49" Width="80" Click="Button_Click"/>
-        <Button Content="Words" HorizontalAlignment="Left" Margin="616,184,0,0" VerticalAlignment="Top" Height="51" Width="80" Click="Button_Click_1"/>
-        <Button Content="Items" HorizontalAlignment="Left" Margin="616,307,0,0" VerticalAlignment="Top" Height="54" Width="80" Click="Button_Click_2"/>
+    <Grid Background="Coral">
+        <DataGrid x:Name="Погода" Height="NaN" Margin="22,22,228,286" Width="NaN"/>
+        <DataGrid x:Name="Тварини" Height="NaN" Margin="22,154,228,154" Width="NaN"/>
+        <DataGrid x:Name="Предмети" Height="NaN" Margin="22,298,228,10" Width="NaN" RenderTransformOrigin="0.478,1.246"/>
+        <Button Content="Погода" HorizontalAlignment="Left" Margin="616,61,0,0" VerticalAlignment="Top" Height="49" Width="80" Click="Button_Click"/>
+        <Button Content="Тварини" HorizontalAlignment="Left" Margin="616,184,0,0" VerticalAlignment="Top" Height="51" Width="80" Click="Button_Click_1"/>
+        <Button Content="Предмети" HorizontalAlignment="Left" Margin="616,307,0,0" VerticalAlignment="Top" Height="54" Width="80" Click="Button_Click_2"/>
 
     </Grid>
 </Window>

@@ -22,6 +22,7 @@ namespace WpfApp3
     public partial class Window3 : Window
     {
         MainWindow Mw3;
+
         private SqlConnection conn = null;
         SqlDataAdapter da1 = null, da2 = null, da3 = null;
         DataSet set1 = null, set2 = null, set3 = null;
@@ -32,7 +33,7 @@ namespace WpfApp3
             InitializeComponent();
             Mw3 = w3;
             conn = new SqlConnection();
-            cs = @" Data Source = (localdb)\MSSQLLocalDB; Initial Catalog = English; Integrated Security = SSPI;";
+            cs = @" Data Source = (localdb)\MSSQLLocalDB; Initial Catalog = Eng; Integrated Security = SSPI;";
             conn.ConnectionString = cs; 
         }
         private void Button_Click_1(object sender, RoutedEventArgs e)
@@ -41,16 +42,16 @@ namespace WpfApp3
             {
                 SqlConnection conn = new SqlConnection(cs);
                 set2 = new DataSet();
-                string sql = "select * from Words;";
+                string sql = "select * from Тварини;";
                 da2 = new SqlDataAdapter(sql, conn);
-                Words.ItemsSource = null;
+                Тварини.ItemsSource = null;
                 cmd2 = new SqlCommandBuilder(da2);
-                da2.Fill(set2, "mywords");
-                set2.Tables[0].TableName = "Words";
+                da2.Fill(set2, "myТварини");
+                set2.Tables[0].TableName = "Тварини";
 
-                DataView Source = new DataView(set2.Tables["Words"]);
-                Words.Items.Refresh();
-                Words.ItemsSource = Source;
+                DataView Source = new DataView(set2.Tables["Тварини"]);
+                Тварини.Items.Refresh();
+                Тварини.ItemsSource = Source;
 
             }
             catch (Exception ex)
@@ -68,16 +69,16 @@ namespace WpfApp3
             {
                 SqlConnection conn = new SqlConnection(cs);
                 set3 = new DataSet();
-                string sql = "select * from Items;";
+                string sql = "select * from Предмети;";
                 da3 = new SqlDataAdapter(sql, conn);
-                Items.ItemsSource = null;
+                Предмети.ItemsSource = null;
                 cmd3 = new SqlCommandBuilder(da3);
-                da3.Fill(set3, "myItems");
-                set3.Tables[0].TableName = "Items";
+                da3.Fill(set3, "myПредмети");
+                set3.Tables[0].TableName = "Предмети";
 
-                DataView Source = new DataView(set3.Tables["Items"]);
-                Items.Items.Refresh();
-                Items.ItemsSource = Source;
+                DataView Source = new DataView(set3.Tables["Предмети"]);
+                Предмети.Items.Refresh();
+                Предмети.ItemsSource = Source;
 
             }
             catch (Exception ex)
@@ -88,22 +89,24 @@ namespace WpfApp3
             {
             }
         }
+
+
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             try
             {
                 SqlConnection conn = new SqlConnection(cs);
                 set1 = new DataSet();
-                string sql = "select * from Topic;";
+                string sql = "select * from Погода;";
                 da1 = new SqlDataAdapter(sql, conn);
-                Topic.ItemsSource = null;
+                Погода.ItemsSource = null;
                 cmd1 = new SqlCommandBuilder(da1);
-                da1.Fill(set1, "mytopic");
-                set1.Tables[0].TableName = "Topic";
+                da1.Fill(set1, "myПогода");
+                set1.Tables[0].TableName = "Погода";
 
-                DataView Source = new DataView(set1.Tables["Topic"]);
-                Topic.Items.Refresh();
-                Topic.ItemsSource = Source;
+                DataView Source = new DataView(set1.Tables["Погода"]);
+                Погода.Items.Refresh();
+                Погода.ItemsSource = Source;
 
             }
             catch (Exception ex)
