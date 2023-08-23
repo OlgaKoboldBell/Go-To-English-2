@@ -57,7 +57,7 @@
                 Margin="1250,10,0,0" VerticalAlignment="Top" Width="110" Click="bt18_Click" Foreground="#FFF1ECEC" FontSize="14"  />
         <Button x:Name="bt19" Content="Картинки" HorizontalAlignment="Left" Height="24" Background ="Pink"
                 Margin="1250,40,0,0" VerticalAlignment="Top" Width="110" Click="bt19_Click" FontSize="14" FontWeight="Bold"   />
-        <WrapPanel x:Name="wp1" Background="Beige" Height="200"  HorizontalAlignment="Center" VerticalAlignment="Center" Visibility="Hidden">
+        <WrapPanel x:Name="wp1" Background="Beige" Height="280"  HorizontalAlignment="Center" VerticalAlignment="Center" Visibility="Hidden">
 
             <StackPanel x:Name="sp1" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" Visibility ="Hidden">
                 <!-- First Image and TextBlock -->
@@ -111,11 +111,16 @@
                     <Image Name="SchoolImage" Source="/images/School.jpg" Width="150" Height="170" MouseLeftButtonDown="OnImageTapped" Tag="School" Visibility="Visible" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                     <TextBlock Name="SchoolText" Text="School - школа " Margin="50" MouseLeftButtonDown="OnWordTapped" Tag="School" Visibility="Collapsed" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                 </StackPanel>
+               
             </StackPanel>
+
+            <Label x:Name="lb" Content="Натисни на картинку та подивися, як пишуться слова" HorizontalAlignment="Center" Height="40" Background ="Pink"
+                Margin="525,0,0,0" VerticalAlignment="Top" Width="480" FontSize="14" FontWeight="Bold" />
         </WrapPanel>
+       
 
         <Button x:Name="bt24" Content="Про нас" HorizontalAlignment="Left" Background ="Coral"
-                Height="24" Margin="225,10,0,0" VerticalAlignment="Top" Width="92" Click="bt24_Click" FontWeight="Bold" FontSize="14" />
+                Height="24" Margin="225,10,0,0" VerticalAlignment="Top" Width="92" Click="bt24_Click" FontWeight="Bold" FontSize="24" />
 
         <Button x:Name="bt21" Content="Тест 1" HorizontalAlignment="Left" Height="24" Background ="Blue"
                 Margin="425,10,0,0" VerticalAlignment="Top" Width="92" Click="bt21_Click" Foreground="#FFF9F2F2" FontSize="14" />
