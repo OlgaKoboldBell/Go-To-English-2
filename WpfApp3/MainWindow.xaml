@@ -8,14 +8,23 @@
         Title="GoToEnglish" Height="900" Width="1500">
     <Grid x:Name="gr">
         <Grid.Background>
-            <ImageBrush ImageSource="\images\en.jpg"></ImageBrush>
+            <ImageBrush ImageSource="\images\en6.jpg"></ImageBrush>
         </Grid.Background>
-        <Button x:Name="bt1" Content="Вибір теми" HorizontalAlignment="Left" Height="19" Margin="25,10,0,0" VerticalAlignment="Top" Width="92" Click="bt1_Click"/>
-        <Button x:Name="bt2" Content="Вітання" HorizontalAlignment="Left" Height="24" Margin="25,50,0,0" VerticalAlignment="Top" Width="80" Visibility ="Hidden" Click="bt2_Click"/>
-        <Button x:Name="bt3" Content="Тварини" HorizontalAlignment="Left" Height="24" Margin="25,90,0,0" VerticalAlignment="Top" Width="80" Visibility ="Hidden" Click="bt3_Click"/>
-        <Button x:Name="bt4" Content="Їжа" HorizontalAlignment="Left" Height="19" Margin="25,130,0,0" VerticalAlignment="Top" Width="80" Visibility ="Hidden" Click="bt4_Click"/>
-        <Button x:Name="bt5" Content="Магазин" HorizontalAlignment="Left" Height="24" Margin="25,170,0,0" VerticalAlignment="Top" Width="80" Visibility ="Hidden" Click="bt5_Click"/>
-        <Button x:Name="bt6" Content="Погода" HorizontalAlignment="Left" Height="24" Margin="25,210,0,0" VerticalAlignment="Top" Width="80" Visibility ="Hidden" Click="bt6_Click"/>
+        <Button x:Name="bt1" 
+                Content="Вибір теми" HorizontalAlignment="Left" Height="24" Margin="25,10,0,0" 
+                VerticalAlignment="Top" Width="110" Click="bt1_Click" Background ="Orange" FontSize="14" FontWeight="Bold"/>
+        <Button x:Name="bt2" Content="Вітання" HorizontalAlignment="Left" Height="24" Background ="Coral"
+                Margin="25,50,0,0" VerticalAlignment="Top" Width="80" 
+                Visibility ="Hidden" Click="bt2_Click"/>
+        <Button x:Name="bt3" Content="Тварини" HorizontalAlignment="Left" Height="24" Background ="Blue"
+                Margin="25,90,0,0" VerticalAlignment="Top" Width="80" Visibility ="Hidden" 
+               Click="bt3_Click"/>
+        <Button x:Name="bt4" Content="Їжа" HorizontalAlignment="Left" Height="19" 
+                 Background ="LightGreen"  Margin="25,130,0,0" VerticalAlignment="Top" Width="80" Visibility ="Hidden" Click="bt4_Click"/>
+        <Button x:Name="bt5" Content="Магазин" HorizontalAlignment="Left" Height="24"  Background ="Yellow" 
+                Margin="25,170,0,0" VerticalAlignment="Top" Width="80" Visibility ="Hidden" Click="bt5_Click"/>
+        <Button x:Name="bt6" Content="Погода" HorizontalAlignment="Left" Height="24" Background ="Red"
+                Margin="25,210,0,0" VerticalAlignment="Top" Width="80" Visibility ="Hidden" Click="bt6_Click"/>
 
         <Image x:Name="im2" HorizontalAlignment="Left" Height="250" Margin="140,100,0,0" VerticalAlignment="Top" Width="270" Visibility ="Hidden" Source="\images\bt2.jpg" />
         <Image x:Name="im3" HorizontalAlignment="Left" Height="250" Margin="140,100,0,0" VerticalAlignment="Top" Width="270" Visibility ="Hidden" Source="\images\bt3.jpg" />
@@ -44,8 +53,10 @@
         <TextBox x:Name="tb2" HorizontalAlignment="Left" Height="595" Margin="140,50,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="755" ScrollViewer.CanContentScroll="True" Visibility ="Hidden" VerticalScrollBarVisibility="Visible" />
         <TextBox x:Name="tb3" HorizontalAlignment="Left" Height="35" Margin="25,370,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="385"  Visibility ="Hidden" />
 
-        <Button x:Name="bt18" Content="На головну" HorizontalAlignment="Left" Height="24" Margin="1250,10,0,0" VerticalAlignment="Top" Width="110" Click="bt18_Click"  />
-        <Button x:Name="bt19" Content="СЛОВА-КАРТИНКИ" HorizontalAlignment="Left" Height="24" Margin="1250,40,0,0" VerticalAlignment="Top" Width="110" Click="bt19_Click"   />
+        <Button x:Name="bt18" Content="На головну" HorizontalAlignment="Left" Height="24" Background ="Purple"
+                Margin="1250,10,0,0" VerticalAlignment="Top" Width="110" Click="bt18_Click" Foreground="#FFF1ECEC" FontSize="14"  />
+        <Button x:Name="bt19" Content="Картинки" HorizontalAlignment="Left" Height="24" Background ="Pink"
+                Margin="1250,40,0,0" VerticalAlignment="Top" Width="110" Click="bt19_Click" FontSize="14" FontWeight="Bold"   />
         <WrapPanel x:Name="wp1" Background="Beige" Height="200"  HorizontalAlignment="Center" VerticalAlignment="Center" Visibility="Hidden">
 
             <StackPanel x:Name="sp1" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" Visibility ="Hidden">
@@ -102,13 +113,18 @@
                 </StackPanel>
             </StackPanel>
         </WrapPanel>
-        
-        <Button x:Name="bt24" Content="Про нас" HorizontalAlignment="Left" Height="24" Margin="225,10,0,0" VerticalAlignment="Top" Width="92" Click="bt24_Click" />
 
-        <Button x:Name="bt21" Content="Тест 1" HorizontalAlignment="Left" Height="24" Margin="425,10,0,0" VerticalAlignment="Top" Width="92" Click="bt21_Click" />
-        <Button x:Name="bt22" Content="Тест 2" HorizontalAlignment="Left" Height="24" Margin="625,10,0,0" VerticalAlignment="Top" Width="92" Click="bt22_Click"   />
-        <Button x:Name="bt23" Content="Тест 3" HorizontalAlignment="Left" Height="24" Margin="825,10,0,0" VerticalAlignment="Top" Width="92" Click="bt23_Click" />
-        <Button x:Name="bt27" Content="Словник" HorizontalAlignment="Left" Height="24" Margin="1025,10,0,0" VerticalAlignment="Top" Width="92" Click="bt27_Click"  />
+        <Button x:Name="bt24" Content="Про нас" HorizontalAlignment="Left" Background ="Coral"
+                Height="24" Margin="225,10,0,0" VerticalAlignment="Top" Width="92" Click="bt24_Click" FontWeight="Bold" FontSize="14" />
+
+        <Button x:Name="bt21" Content="Тест 1" HorizontalAlignment="Left" Height="24" Background ="Blue"
+                Margin="425,10,0,0" VerticalAlignment="Top" Width="92" Click="bt21_Click" Foreground="#FFF9F2F2" FontSize="14" />
+        <Button x:Name="bt22" Content="Тест 2" HorizontalAlignment="Left" Height="24" Background ="LightGreen"
+                Margin="625,10,0,0" VerticalAlignment="Top" Width="92" Click="bt22_Click" FontWeight="Bold" FontSize="14"   />
+        <Button x:Name="bt23" Content="Тест 3" HorizontalAlignment="Left" Height="24" Background ="Yellow"
+                Margin="825,10,0,0" VerticalAlignment="Top" Width="92" Click="bt23_Click" FontSize="14" FontWeight="Bold" />
+        <Button x:Name="bt27" Content="Словник" HorizontalAlignment="Left" Height="24" Background ="Red"
+                Margin="1025,10,0,0" VerticalAlignment="Top" Width="92" Click="bt27_Click" Foreground="#FFF3EDED" FontSize="14"  />
 
 
         <WrapPanel x:Name="wp2" Background="Beige" HorizontalAlignment="Left" Height="500" Margin="50,50,0,0"  VerticalAlignment="Top" 
