@@ -114,13 +114,13 @@
                
             </StackPanel>
 
-            <Label x:Name="lb" Content="Натисни на картинку та подивися, як пишуться слова" HorizontalAlignment="Center" Height="40" Background ="Pink"
-                Margin="525,0,0,0" VerticalAlignment="Top" Width="480" FontSize="14" FontWeight="Bold" />
+            <Label x:Name="lb" Content="  Натисни на картинку та подивися, як пишуться слова" HorizontalAlignment="Center" Height="40" Background ="Pink"
+                Margin="430,0,0,0" VerticalAlignment="Top" Width="500" FontSize="18" FontWeight="Bold" />
         </WrapPanel>
        
 
         <Button x:Name="bt24" Content="Про нас" HorizontalAlignment="Left" Background ="Coral"
-                Height="24" Margin="225,10,0,0" VerticalAlignment="Top" Width="92" Click="bt24_Click" FontWeight="Bold" FontSize="24" />
+                Height="24" Margin="225,10,0,0" VerticalAlignment="Top" Width="92" Click="bt24_Click" FontWeight="Bold" FontSize="14" />
 
         <Button x:Name="bt21" Content="Тест 1" HorizontalAlignment="Left" Height="24" Background ="Blue"
                 Margin="425,10,0,0" VerticalAlignment="Top" Width="92" Click="bt21_Click" Foreground="#FFF9F2F2" FontSize="14" />
