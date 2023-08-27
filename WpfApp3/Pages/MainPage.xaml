@@ -1,0 +1,106 @@
+﻿<Page x:Class="WpfApp3.Pages.MainPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WpfApp3.Pages"
+      mc:Ignorable="d" 
+
+      d:DesignHeight="900" d:DesignWidth="1500"
+      Title="MainPage">
+
+    <!-- Це можна перенести в App.xaml ( -->
+    <Page.Resources>
+        <Style x:Key="MenuStyle">
+            <Style.Resources>
+                <Style TargetType="Button">
+                    <Style.Setters>
+                        <Setter Property="Margin" Value="10"/>
+                        <Setter Property="Padding" Value="10"/>
+
+                        <Setter Property="FontFamily" Value="/Fonts/#Bauhaus LT(RUS BY LYAJKA)"/>
+                        <Setter Property="FontSize" Value="20"/>
+                        <Setter Property="FontWeight" Value="Bold"/>
+
+                    </Style.Setters>
+
+                    <Style.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="10" />
+                        </Style>
+                    </Style.Resources>
+                </Style>
+
+                <Style TargetType="StackPanel">
+                    <Style.Resources>
+                        <Style TargetType="Button">
+                            <!--<Setter Property="Height" Value="50" />-->
+                            <Setter Property="Width" Value="100"/>
+
+                            <Setter Property="Margin" Value="10,20,10,20"/>
+
+                            <Setter Property="FontFamily" Value="/Fonts/#Bauhaus LT(RUS BY LYAJKA)"/>
+                            <Setter Property="FontSize" Value="18"/>
+
+                            <Style.Resources>
+                                <Style TargetType="Border">
+                                    <Setter Property="CornerRadius" Value="10" />
+                                </Style>
+                            </Style.Resources>
+                        </Style>
+                    </Style.Resources>
+                </Style>
+            </Style.Resources>
+        </Style>
+    </Page.Resources>
+    <!-- ) -->
+
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="\images\en6.jpg"></ImageBrush>
+        </Grid.Background>
+
+        <Grid x:Name="gr" Style="{DynamicResource MenuStyle}" Height="450" VerticalAlignment="Top">
+
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="3*"/>
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+
+            <Button x:Name="bt1" Grid.Column="0" Grid.Row="0" Content="Курси" Background ="#88FF00" />
+
+            <StackPanel x:Name="CourseChose" Grid.Column="1" Grid.Row="0" Orientation="Horizontal">
+                <Button x:Name="bt2" Content="Вітання" Background ="Coral" Click="bt2_Click"/>
+                <Button x:Name="bt3" Content="Тварини" Background ="#2288FF" Click="bt3_Click"/>
+                <Button x:Name="bt4" Content="Їжа" Background ="LightGreen" Click="bt4_Click"/>
+                <Button x:Name="bt5" Content="Магазин" Background ="Yellow" Click="bt5_Click"/>
+                <Button x:Name="bt6" Content="Погода" Background ="Red" Click="bt6_Click"/>
+            </StackPanel>
+
+            <Button x:Name="bt999" Grid.Column="0" Grid.Row="1" Content="Тести" Background ="#4056FF" />
+
+            <StackPanel x:Name="TestChose" Grid.Column="1" Grid.Row="1" Orientation="Horizontal">
+                <Button x:Name="bt21" Content="Тест 1" Background ="#2288FF" Click="bt21_Click" />
+                <Button x:Name="bt22" Content="Тест 2" Background ="LightGreen" Click="bt22_Click" />
+                <Button x:Name="bt23" Content="Тест 3" Background ="Yellow" Click="bt23_Click" />
+            </StackPanel>
+
+            <Button x:Name="bt19" Grid.Column="0" Grid.Row="2" Content="Картинки" Background ="Pink" Click="bt19_Click"/>
+
+            <Button x:Name="bt27" Grid.Column="0" Grid.Row="3" Content="Словник" Background ="#FF2040" Click="bt27_Click"/>
+
+            <Button x:Name="bt24" Grid.Column="0" Grid.Row="4" Content="Про нас" Background ="Coral" Click="bt24_Click"/>
+
+        </Grid>
+    </Grid>
+</Page>
